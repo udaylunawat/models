@@ -1,6 +1,6 @@
 import datasets.fsns as fsns
 
-DEFAULT_DATASET_DIR = '~/tf-od-api/models/research/attention_ocr/python/datasets/data/number_plates'
+DEFAULT_DATASET_DIR = '/home/anuj/tf-od-api/models/research/attention_ocr/python/datasets/data/number_plates'
 
 DEFAULT_CONFIG = {
     'name':
