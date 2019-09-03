@@ -15,5 +15,6 @@
 
 import fsns
 import fsns_test
+import number_plates
 
-__all__ = [fsns, fsns_test]
+__all__ = [fsns, fsns_test, number_plates]

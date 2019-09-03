@@ -53,7 +53,7 @@ def define():
   flags.DEFINE_string('dataset_name', 'fsns',
                       'Name of the dataset. Supported: fsns')
 
-  flags.DEFINE_string('split_name', 'train',
+  flags.DEFINE_string('split_name', 'test',
                       'Dataset split name to run evaluation for: test,train.')
 
   flags.DEFINE_string('dataset_dir', None,
