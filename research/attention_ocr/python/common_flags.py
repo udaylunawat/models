@@ -47,7 +47,7 @@ def define():
   flags.DEFINE_integer('crop_height', None,
                        'Height of the central crop for images.')
 
-  flags.DEFINE_string('train_log_dir', '/tmp/attention_ocr/train',
+  flags.DEFINE_string('train_log_dir', '/home/anuj/tf-od-api/aocr-logs',
                       'Directory where to write event logs.')
 
   flags.DEFINE_string('dataset_name', 'fsns',
