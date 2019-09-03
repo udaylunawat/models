@@ -50,7 +50,7 @@ def define():
   flags.DEFINE_string('train_log_dir', '/home/anuj/tf-od-api/aocr-logs',
                       'Directory where to write event logs.')
 
-  flags.DEFINE_string('dataset_name', 'fsns',
+  flags.DEFINE_string('dataset_name', 'number_plates',
                       'Name of the dataset. Supported: fsns')
 
   flags.DEFINE_string('split_name', 'test',
