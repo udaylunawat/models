@@ -63,7 +63,7 @@ EncodeCoordinatesParams = collections.namedtuple('EncodeCoordinatesParams', [
 def _dict_to_array(id_to_char, default_character):
   num_char_classes = max(id_to_char.keys()) + 1
   array = [default_character] * num_char_classes
-  for k, v in id_to_char.iteritems():
+  for k, v in id_to_char.items(): # uday - updated iteritems() to items()
     array[k] = v
   return array
 
@@ -534,7 +534,7 @@ class Model(object):
                    streaming=True,
                    rej_char=self._params.null_code))
 
-      for name, value in names_to_values.iteritems():
+      for name, value in names_to_values.items(): # # uday - updated iteritems() to items()
         summary_name = 'eval/' + name
         tf.summary.scalar(summary_name, tf.Print(value, [value], summary_name))
       return names_to_updates.values()

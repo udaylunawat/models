@@ -15,7 +15,12 @@
 
 """Functions to make unit testing easier."""
 
-import StringIO
+# uday - updated
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
+
 import numpy as np
 from PIL import Image as PILImage
 import tensorflow as tf
