@@ -1,5 +1,7 @@
 import datasets.fsns as fsns
 from datasets import fsns
+# import fsns
+# uday - updated
 DEFAULT_DATASET_DIR = '/content/models/research/attention_ocr/python/datasets/data/number_plates'
 
 DEFAULT_CONFIG = {

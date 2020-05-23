@@ -20,6 +20,9 @@ import os
 import tensorflow as tf
 from tensorflow.contrib import slim
 
+# uday - updated
+# import fsns
+# import unittest_utils
 from datasets import fsns
 from datasets import unittest_utils
 
