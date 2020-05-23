@@ -67,7 +67,7 @@ def main(_):
       master=FLAGS.master,
       checkpoint_dir=FLAGS.train_log_dir,
       logdir=FLAGS.eval_log_dir,
-      eval_op=eval_ops,
+      eval_op= list(eval_ops), # uday, updated, eval_op=eval_ops, 
       num_evals=FLAGS.num_batches,
       eval_interval_secs=FLAGS.eval_interval_secs,
       max_number_of_evaluations=FLAGS.number_of_steps,

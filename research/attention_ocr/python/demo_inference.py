@@ -47,11 +47,15 @@ def load_images(file_pattern, batch_size, dataset_name):
   images_actual_data = np.ndarray(shape=(batch_size, height, width, 3),
                                   dtype='uint8')
   for i in range(batch_size):
-    path = file_pattern % i
+    path = file_pattern.format(i)    # uday - updated, path = file_pattern % i
     print("Reading %s" % path)
-    pil_image = PIL.Image.open(tf.gfile.GFile(file_pattern))
+    f = open(path, 'rb')
+    pil_image = PIL.Image.open(f) # uday - updated
+    # pil_image = PIL.Image.open(tf.gfile.GFile(file_pattern))
     images_actual_data[i, ...] = np.asarray(pil_image)
   return images_actual_data
+
+  
 
 
 def create_model(batch_size, dataset_name):
